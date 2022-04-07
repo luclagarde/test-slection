@@ -11,8 +11,9 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.Yes)
     if (Choix == 1) {
-        custom.Super(176)
+        extra.Super(138)
     } else if (Choix == 2) {
         soundExpression.soaring.playUntilDone()
     } else {
@@ -24,7 +25,4 @@ let Choix = 0
 music.setBuiltInSpeakerEnabled(true)
 music.setVolume(255)
 Choix = 0
-custom.fib()
-basic.forever(function () {
-	
-})
+extra.fleche()

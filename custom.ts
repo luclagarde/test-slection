@@ -8,7 +8,7 @@ namespace extra {
      * TODO: Flèche pointant A
      */
     //% block="Flèche"
-    export function fib(): void {
+    export function fleche(): void {
         basic.showLeds(`
         . . . . .
         . . . . .
