@@ -5,11 +5,44 @@
 //% weight=100 color=#0fbc11 icon=""
 namespace custom {
     /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
+     * TODO: Flèche pointant A
      */
-    //% block="fleur valeur $value"
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
+    //% block="Flèche"
+    export function fib(): void {
+        basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . #
+        . . . . .
+        . . . . .
+        `)
+        basic.showLeds(`
+        . . . . .
+        . . . . #
+        . . . # .
+        . . . . #
+        . . . . .
+        `)
+        basic.showLeds(`
+        . . . . #
+        . . . # .
+        . . # . .
+        . . . # .
+        . . . . #
+        `)
+        basic.showLeds(`
+        . . . # .
+        . . # . .
+        . # . . .
+        . . # . .
+        . . . # .
+        `)
+        basic.showLeds(`
+        . . # . .
+        . # . . .
+        # . . . .
+        . # . . .
+        . . # . .
+        `)
     }
 }

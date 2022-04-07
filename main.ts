@@ -20,48 +20,11 @@ input.onButtonPressed(Button.B, function () {
     }
     basic.showNumber(Choix)
 })
-function Fleche () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . #
-        . . . . .
-        . . . . .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . . . . #
-        . . . # .
-        . . . . #
-        . . . . .
-        `)
-    basic.showLeds(`
-        . . . . #
-        . . . # .
-        . . # . .
-        . . . # .
-        . . . . #
-        `)
-    basic.showLeds(`
-        . . . # .
-        . . # . .
-        . # . . .
-        . . # . .
-        . . . # .
-        `)
-    basic.showLeds(`
-        . . # . .
-        . # . . .
-        # . . . .
-        . # . . .
-        . . # . .
-        `)
-}
 let Choix = 0
 music.setBuiltInSpeakerEnabled(true)
 music.setVolume(255)
 Choix = 0
-Fleche()
+custom.fib()
 basic.forever(function () {
 	
 })
