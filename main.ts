@@ -25,4 +25,5 @@ let Choix = 0
 music.setBuiltInSpeakerEnabled(true)
 music.setVolume(255)
 Choix = 0
+soundExpression.giggle.play()
 extra.fleche()
