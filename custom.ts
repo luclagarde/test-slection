@@ -205,4 +205,81 @@ namespace extra {
             music.playTone(294, music.beat(BeatFraction.Whole))
         }
     }
+    /**
+    * Jouer mélodie Beat It
+    * @param tempo describe the beat, eg:120
+    */
+    //% block="Mélodie Beat It tempo à $tempo (bmp)"
+    //% tempo.min=4 tempo.max=400
+    //% tempo.fieldOptions.precision=1
+    export function Beat(tempo: number): void {
+        music.setTempo(tempo)
+        for (let index = 0; index < 2; index++) {
+            A()
+            music.playTone(294, music.beat(BeatFraction.Half))
+            music.rest(music.beat(BeatFraction.Half))
+            music.playTone(294, music.beat(BeatFraction.Half))
+            music.rest(music.beat(BeatFraction.Whole))
+            A()
+            music.playTone(294, music.beat(BeatFraction.Whole))
+            music.rest(music.beat(BeatFraction.Whole))
+        }
+        music.rest(music.beat(BeatFraction.Double))
+        for (let index = 0; index < 2; index++) {
+            B()
+        }
+        function B() {
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(587, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Whole))
+            music.playTone(494, music.beat(BeatFraction.Double))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Double))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(330, music.beat(BeatFraction.Half))
+            music.playTone(294, music.beat(BeatFraction.Half))
+            music.playTone(330, music.beat(BeatFraction.Whole))
+            music.playTone(330, music.beat(BeatFraction.Half))
+            music.playTone(330, music.beat(BeatFraction.Half))
+            music.playTone(370, music.beat(BeatFraction.Half))
+            music.playTone(330, music.beat(BeatFraction.Half))
+            music.playTone(294, music.beat(BeatFraction.Half))
+            music.playTone(247, music.beat(BeatFraction.Half))
+            music.playTone(294, music.beat(BeatFraction.Whole))
+            music.playTone(330, music.beat(BeatFraction.Whole))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(330, music.beat(BeatFraction.Double))
+            music.playTone(330, music.beat(BeatFraction.Whole))
+            music.playTone(370, music.beat(BeatFraction.Half))
+            music.playTone(294, music.beat(BeatFraction.Breve))
+        }
+        function A() {
+            music.playTone(165, music.beat(BeatFraction.Whole))
+            music.playTone(196, music.beat(BeatFraction.Half))
+            music.playTone(247, music.beat(BeatFraction.Half))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(330, music.beat(BeatFraction.Double))
+            music.playTone(370, music.beat(BeatFraction.Whole))
+            music.playTone(330, music.beat(BeatFraction.Half))
+        }
+    }
 }
