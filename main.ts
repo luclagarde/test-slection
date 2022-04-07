@@ -12,7 +12,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     if (Choix == 1) {
-        custom.Super(135)
+        custom.Super(176)
     } else if (Choix == 2) {
         soundExpression.soaring.playUntilDone()
     } else {
