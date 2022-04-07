@@ -15,15 +15,14 @@ input.onButtonPressed(Button.B, function () {
     if (Choix == 1) {
         extra.Super(138)
     } else if (Choix == 2) {
-        soundExpression.soaring.playUntilDone()
+        extra.Star(120)
     } else {
-        soundExpression.twinkle.playUntilDone()
+        music.startMelody(music.builtInMelody(Melodies.Punchline), MelodyOptions.Once)
     }
     basic.showNumber(Choix)
 })
 let Choix = 0
-music.setBuiltInSpeakerEnabled(true)
 music.setVolume(255)
 Choix = 0
-soundExpression.giggle.play()
+music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
 extra.fleche()
