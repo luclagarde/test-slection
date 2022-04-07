@@ -18,7 +18,7 @@ input.onButtonPressed(Button.B, function () {
     } else {
         soundExpression.twinkle.playUntilDone()
     }
-    Fleche()
+    basic.showNumber(Choix)
 })
 function Fleche () {
     basic.showLeds(`
